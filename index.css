@@ -1,0 +1,236 @@
+/* Estilos globais */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Quicksand", "Lucida Sans", "Lucida Sans Regular",
+    "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  height: 100vh;
+  color: #2c2f3b;
+}
+
+/* Estilos CSS para o cabeçalho */
+header {
+  /* padding: 40px; */
+  max-width: 1300px;
+  margin: auto;
+  display: flex;
+  height: 100px;
+}
+
+header h1 {
+  font-size: 28px;
+  margin: 0;
+  margin-right: auto;
+  align-self: center;
+}
+header a {
+  display: flex;
+  align-items: center;
+  padding: 6px;
+
+  transition: all 0.3s;
+}
+
+header a:hover {
+  color: #01bcf1;
+  background-color: #f5f5f5;
+}
+
+header a span {
+  color: #01bcf1;
+  font-weight: 700;
+  border-radius: 4px;
+  /* background-color: red; */
+  padding: 12px;
+}
+
+/* Estilos CSS para o conteúdo principal */
+main {
+  margin: 0 auto;
+}
+
+main p {
+  font-size: 16px;
+  margin-top: 12px;
+  text-align: justify;
+}
+
+/* Estilos de botões */
+main button {
+  border: 2px solid #01bcf1;
+  color: #01bcf1;
+  background-color: #fff;
+  padding: 10px 40px;
+  border-radius: 4px;
+  margin: 3px;
+  font-weight: 700;
+  transition: all 0.1s;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+main button:hover {
+  color: #38d1fe;
+  border: 2px solid #38d1fe;
+  background-color: #f5f5f5;
+  cursor: pointer;
+}
+
+main button.secondary {
+  border: 2px solid #fff;
+  color: #01bcf1;
+  background-color: #fff;
+}
+
+.know-more-button {
+  margin-top: 34px;
+  align-self: flex-start;
+}
+
+.icon {
+  color: #01bcf1;
+  fill: currentColor;
+  flex-shrink: 0;
+  height: 1em;
+  line-height: 1;
+  width: 1em;
+  margin: 3px 0 0 8px;
+}
+
+/* Sessões */
+section {
+  padding: 20px;
+  max-width: 1100px;
+  margin: auto;
+  margin: 80px auto;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 44px;
+}
+
+section p {
+  font-size: 16px;
+  margin-top: 16px;
+  text-align: left;
+}
+
+section .section-div {
+  padding: 20px 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+main .painted section .section-div h2 {
+  margin-bottom: 42px;
+}
+
+.section-div h2 {
+  font-size: 44px;
+  margin-bottom: 24px;
+}
+
+.margin-0 {
+  margin: 0 auto;
+}
+
+.painted {
+  background-color: #01bcf1;
+  color: #fff;
+}
+
+.creators {
+  margin: 0 auto;
+  padding: 80px 0;
+  max-width: 1100px;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto auto;
+}
+
+.creators .avatar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.creators .avatar-img {
+  border-radius: 999px;
+  width: 120px;
+}
+.creators .creators-title {
+  text-align: center;
+  grid-row: 1/2;
+  grid-column: 1/-1;
+
+  font-size: 34px;
+  margin-bottom: 64px;
+}
+
+.contact-form h1 {
+  margin-bottom: 34px;
+}
+
+form {
+  display: grid;
+  grid-template-columns: auto 3fr;
+  margin: 0 auto;
+  width: 100%;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+  margin-right: 18px;
+}
+
+input[type="text"],
+input[type="email"],
+select {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type="submit"] {
+  background-color: #01bcf1;
+  color: #fff;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  grid-row: 5/5;
+  grid-column: 1/-1;
+}
+
+input[type="submit"]:hover {
+  background-color: #018db8;
+}
+
+/* Estilos CSS para o rodapé */
+footer {
+  background-color: #f5f5f5;
+  padding: 20px;
+  text-align: center;
+}
+
+footer p {
+  font-size: 14px;
+  color: #888;
+  margin: 0;
+}
